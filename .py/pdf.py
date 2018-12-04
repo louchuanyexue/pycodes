@@ -1,6 +1,6 @@
 from PyPDF2 import PdfFileReader, PdfFileMerger, PdfFileWriter
 
-def get_reader(filename,password):
+def get_reader(filename,password=None):
     try:
         old_file = open(filename, 'rb')
     except IOError as err:
@@ -64,5 +64,5 @@ def split_by_pages(filename, pages, password=None):
         pdf_writer.write(open(split_pdf_name, 'wb'))
 
 
-get_reader(r"C:\Users\15203\Desktop\9.pdf")
-split_by_pages(r"C:\Users\15203\Desktop\9.pdf", 5)
+get_reader(r"C:\Users\15203\Desktop\3.pdf")
+split_by_pages(r"C:\Users\15203\Desktop\3.pdf", 5)
