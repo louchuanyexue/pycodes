@@ -11,6 +11,6 @@ def hano(height, left='left', right='right', midle='midle'):
         print(height,left ,"->", right)
         hano(height-1,midle,right,left)
 
-hano(2)
+hano(3)
         
     
